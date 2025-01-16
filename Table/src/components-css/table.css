@@ -1,0 +1,17 @@
+
+   
+.row{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+}
+.cell-button{
+    background-color: green;
+    margin:10px;
+        
+}
+.result-cell{
+    background-color: lightblue;
+}
