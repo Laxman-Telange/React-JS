@@ -1,0 +1,53 @@
+/* General body styling for the entire application */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Styling for the main App container */
+.App {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Header styles for better appearance */
+h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Button general style for remove buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding:10px 11px;
+  background-color: #FFEB00;
+  color: #000957;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+ 
+ 
+}
+
+
+/* Image centering and scaling */
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}

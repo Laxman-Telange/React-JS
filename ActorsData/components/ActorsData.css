@@ -1,0 +1,143 @@
+  
+  .actor-details {
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .actor-details img {
+    width: 100%;
+    height:150px;
+    margin-bottom: 10px;
+    display: flex;
+   
+   
+  }
+
+  .actor-cards{
+    display: flex ;
+    gap:10px;
+    padding-bottom:50px;    
+    height:150px;
+    
+    
+  }
+  .actor-card{
+   
+    height:80px;
+    width: 110px;
+    padding-bottom:20px;
+    border-radius: 50%;
+  
+    
+  }
+  .actor-image {
+    width: 100%;
+    height:auto;
+    object-fit:fill;
+    border-radius: 50%;
+    aspect-ratio: 4/4;
+    background-size:100%;
+      
+  }
+  .name{
+    font-size: 13px;
+    text-align: center;
+    color:black;
+ 
+   
+  }
+  .title{
+    text-align: center;
+  }
+  .selected-image img{
+   
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    
+  }
+  .bio{
+    font-size: 20px;
+    margin-top: -150px;
+
+  }
+ 
+  .return-card{
+    display: grid;
+    align-items: center;   
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #de1d1d;
+    width: 250px;
+    height:100px;
+    justify-content: center;
+   
+    
+  }
+.same-cards{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  padding-left: 5%;
+}
+.return-card .name{
+  color: black;
+  font-size: 15px;
+  padding:5px;  
+}
+.movie-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px;
+
+}
+
+
+.movie-card {
+  
+  margin-bottom: 15px;
+  background-color: #a619d1;
+  border-radius: 10px; 
+  transition: transform 0.2s, box-shadow 0.2s;
+   /* Box shadow */
+  box-shadow: 0 4px 4px rgba(1, 1, 1, 0.5), 0 4px 4px rgba(0, 1, 1, 0.2); /* Light shadow */
+  
+  transition: transform 0.8s ease-in-out, box-shadow 0.3s ease; /* Optional: for smooth hover effects */
+  height:auto;
+}
+
+.movie-card:hover {
+  transform: scale(1.09);; /* Optional: subtle lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+.movie-list .actor-image img{
+  width: 100%;
+  height:250px;
+  object-fit:fill;
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+}
+.movie-details{
+  background-color: #d6d0f4;
+  text-align: center;
+  height:120px;
+  border-radius: 0 0 10px 10px;
+  color: #001A6E;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: -45px;
+}
+
+ 
+  
+ 
+  
