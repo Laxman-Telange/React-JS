@@ -1,0 +1,123 @@
+/* Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  height: auto;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Pushes button to the bottom */
+  height: auto;
+  /* Ensures all cards have equal height */
+}
+/* Image Styling */
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  overflow: hidden;
+  padding: 15px;
+}
+
+/* Card Content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; Ensures it expands fully */
+  justify-content: space-evenly;
+  /* Space out content */
+  text-align: center;
+}
+
+.card-content .body {
+
+  flex-grow: 1;
+  /* Pushes button down */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Spaces elements properly */
+}
+
+.card-content h3 {
+  margin: 10px 0;
+}
+
+.card-content .sub {
+  color: #0d0101;
+  text-align: center;
+}
+.card-content .body .price{
+  font-weight: bold;
+}
+
+button {
+
+  margin-top: auto;
+  /* Pushes button to the bottom */
+  width: 50%;
+  text-align: center;
+  background-color: #D69ADE;
+  color:#131842;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.rating {
+  display: flex;
+  gap: 4px;
+  margin: 8px 0;
+  justify-content: center;
+}
+
+.head {
+  text-align: center;
+  background-color: #FFB22C;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*  Responsive Design Adjustments */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+  
+  button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+}
