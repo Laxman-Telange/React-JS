@@ -1,0 +1,9 @@
+.movie-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    justify-content: center;
+  }
+  

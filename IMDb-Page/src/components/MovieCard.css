@@ -1,0 +1,36 @@
+.movie-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 5px; /* Reduced gap between image and details */
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: auto;
+  width: 100%;
+}
+.movie-image{
+  margin-right: 10px;
+}
+.movie-image img {
+  aspect-ratio: 1;
+  height: 150px;
+  border-radius: 8px;
+  width: 150px;
+  
+}
+.container{
+  display: flex;
+ 
+  }
+
+.movie-details h3 {
+  margin: 0;
+  font-size:20px;
+  color: #333;
+}
+
+.movie-details p {
+  margin: 3px 0; /* Slightly reduced margin between details */
+  color: #666;
+}
