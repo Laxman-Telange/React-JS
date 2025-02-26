@@ -1,0 +1,132 @@
+/* Main container styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #4facfe, #d963aa); ;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  
+  /* Inner container styling */
+  .container {
+    width: 100%;  
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;    
+    gap: 20px;
+    
+  }
+  
+  /* Row layout: Two columns (coins on left, count on right) */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 30%;
+    width: 20%;
+    margin: auto;
+    
+  }
+ 
+  
+  /* Coin container styling */
+  .coin-one,
+  .coin-two,
+  .coin-five,
+  .coin-ten,
+  .coin-twenty {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    
+    
+  }
+  
+  /* Coin images */
+  .coin-one img,
+  .coin-two img,
+  .coin-five img,
+  .coin-ten img,
+  .coin-twenty img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+   
+    border: 1px solid rgb(199, 16, 16);
+   
+  }
+  
+  /* Hover effect */
+  .coin-one:hover,
+  .coin-two:hover,
+  .coin-five:hover,
+  .coin-ten:hover,
+  .coin-twenty:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Total count section - placed in the second column */
+  .total-count {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+    
+  }
+  
+  /* Count images should be smaller */
+  .count-one,.count-two,.count-five,.count-ten,.count-twenty{
+    border: 6px rgb(0, 255, 8);
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    background: linear-gradient(155deg, #440658, #15a90a); /* Purple to Pink gradient */
+    padding:10px;
+    border-radius: 25px 0px 25px 0px;
+  }
+  .count-one img,
+  .count-two img,
+  .count-five img,
+  .count-ten img,
+  .count-twenty img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+  }
+  .row-two {
+    display: flex;   
+    justify-content:flex-end;     
+    gap: 10px;
+    width: 50%; 
+      
+  }
+  p{
+    color: whitesmoke;
+  }
+  
