@@ -5,7 +5,7 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    width:50vw;
+    width:100vw;
 }
 .cell-button{
     background-color: green;
